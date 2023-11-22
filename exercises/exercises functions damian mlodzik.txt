@@ -1,0 +1,83 @@
+	ex. 1
+
+The function will not display the confirmation ("Did parents allow you?") if else is removed.
+
+	ex. 2
+
+using operator ?
+
+function checkAge(age) {
+  return (age > 18) ? true : confirm('Did parents allow you?');
+}
+
+using OR ||
+
+function checkAge(age) {
+  return (age > 18) || confirm('Did parents allow you?');
+}
+
+	ex. 3
+
+function min(a, b) {
+    return Math.min(a, b);
+}
+
+	ex. 4
+
+const min = function(a, b) {
+    return Math.min(a, b);
+}
+
+
+const min = (a, b) => Math.min(a, b);
+
+	ex. 5
+            function pow(x, n) {
+                return Math.pow(x, n);
+            }
+    
+            function calculatePower() {
+                var base = parseFloat(prompt("Enter the base (x):"));
+                var exponent = parseInt(prompt("Enter the exponent (n):"));
+    
+                if (!isNaN(base) && !isNaN(exponent)) {
+                    var result = pow(base, exponent);
+                    alert("Result: " + result);
+                } else {
+                    alert("Please enter valid numbers.");
+                }
+            }
+	
+	ex. 6
+
+const pow = (x, n) => Math.pow(x, n);
+
+	ex. 7
+
+const pow = (x, n) => x ** n;
+
+	ex. 8
+const ask = (question, yes, no) => {
+    if (confirm(question)) yes();
+    else no();
+};
+
+ask(
+    "Do you agree?",
+    () => { alert("You agreed."); },
+    () => { alert("You canceled the execution."); }
+);
+
+	ex. 9
+let age = prompt("Input age")
+let amountPerDay = prompt("Input amount per day")
+function calculateSupply(age, amountPerDay) {
+  var maxAge = 100;
+  var totalNeeded = (amountPerDay * 365) * (maxAge - age);
+  var message = 'You will need ' + totalNeeded + ' cups of tea to last you until the ripe old age of ' + maxAge;
+  console.log(message);
+}
+
+calculateSupply(age, 26);
+calculateSupply(age, 6.5);
+calculateSupply(age, 565);

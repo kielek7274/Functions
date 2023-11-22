@@ -1,0 +1,35 @@
+ex. 1
+
+function pow(x, y){
+if ( y == 0 ) {
+	return 1;
+	}
+	return x * pow(x, y - 1)
+}
+
+	ex. 2
+function concatenateWords() {
+  return Array.from(arguments).join(' ');
+}
+
+	ex. 3
+function performOperation(num1, num2, operationCallback) {
+  return operationCallback(num1, num2);
+}
+
+	ex. 4
+
+output will be 100 
+
+	ex. 5
+output will be "Tesla"
+
+	ex. 6
+the output will be:
+
+tesla
+mg
+
+
+	ex. 7
+the output will be console log "Los gatos maullan", as animal1 is not determined.
